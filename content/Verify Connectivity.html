@@ -1,0 +1,301 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923237 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923237 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='homework.html'>homework</a><ul class='dropdown'><li><a href='PCH 11.html'>PCH 11</a><li><a href='Coaxial Cable Connectors.html'>Coaxial Cable Connectors</a><li><a href='PCH 12.html'>PCH 12</a><li><a href='Verify Connectivity.html'>Verify Connectivity</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">PCH 12 << <a href='PCH 12.html'>Previous</a> <br /><h1>Verify Connectivity</h1>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">驗證連接性<br/><span>After the machine is connected and powered on (assuming Windows 7 or later), watch the system tray after boot-up to see if there is a wired network icon. The standard Windows 7 icons are:</span><br/></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">連接機器並打開電源後（假設使用Windows 7或更高版本），啟動後請查看系統托盤，以查看是否有有線網絡圖標。 Windows 7的標準圖標是：<br/><span>Access the “network sharing center” to select the type of network access you need to have and add any devices required for the node (e.g., a printer). Verify access by opening the browser or using a command line tool to verify connectivity and addressing.</span><br/></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">訪問“網絡共享中心”以選擇所需的網絡訪問類型，並添加該節點所需的任何設備（例如打印機）。通過打開瀏覽器或使用命令行工具來驗證訪問權限，以驗證連接性和地址。<br/><span>Now that you have a general understanding of networking hardware, application of standards for LANs (local area networks) and WANs (wide area networks), and the limitations of the media used, you should be able to plan adding a network node to an already existing network. For example, you could add a new computer to your company’s wired LAN. In such situations, the majority of the hardware installation is plug and play (PnP), but you still have to know that the hardware and media chosen are correct, configure software settings for network access, and verify the new hardware will function properly to allow user access to all network resources.</span><br/><span>既然您已經對網絡硬件，LAN（局域網）和WAN（廣域網）的標準的應用以及所用媒體的限制有了一般的了解，那麼您應該能夠計劃將網絡節點添加到已經現有網絡。例如，您可以將新計算機添加到公司的有線局域網中。在這種情況下，大多數硬件安裝都是即插即用（PnP），但您仍然必須知道所選的硬件和媒體是正確的，配置用於網絡訪問的軟件設置，並驗證新硬件是否正常運行以允許用戶訪問所有網絡資源。</span><br/><span>Current technology in most small office/home office (SOHO) environments will have auto-sensing networking hardware. There are older switches and routers that still remain in some networks that do not have the ability to run at 100/1000BaseT, so check your network documentation!</span><br/><span>大多數小型辦公室/家庭辦公室（SOHO）環境中的當前技術都將具有自動感應網絡硬件。有些舊的交換機和路由器仍然保留在某些不能在100 / 1000BaseT上運行的網絡中，因此請查看您的網絡文檔！</span><br/></span></pre>
+<p><span title="Quick scroll up">Media <span>媒體</span></span></p>
+<p><span title="Quick scroll up"><span>Installing a wired connection onto the network means knowing if the NIC (network interface card) of the device can also auto-negotiate throughput based on the cable media used. Again, new or current technology should be auto-sensing and auto-negotiating (speed, duplex mode and other network parameters). The most important decision for the technician is selecting the correct type of Ethernet cable to connect the device. Recall that the cable standards will restrict distance as well as throughput. A cat 5 cable was standard for 100BaseT but will limit throughput to 100 Mbps so you must use cat 5e or cat 6 if you are trying to achieve 1000BaseT (1 Gbps).</span></span></p>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。同樣，新技術或當前技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。回想一下，電纜標準將限制距離以及吞吐量。 Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。<br/></span></pre>
+<p><span title="Quick scroll up">Distance <span>距離</span></span></p>
+<p><span title="Quick scroll up"><span>Most current SOHO environments will have Ethernet wall jacks internally connecting to the next network device, be it a switch or a hub. But, if there is not a connection already present, you must remember that all copper-based Ethernet cable is limited to 100 meters. Do not run the wire in an area where the cabling can cause a safety hazard, become damaged due to environmental conditions, or suffer from electromagnetic interference (EMI).</span></span></p>
+<p><span title="Quick scroll up"><span>當前大多數SOHO環境將在內部將以太網牆壁插孔連接到下一個網絡設備，無論是交換機還是集線器。但是，如果尚不存在連接，則必須記住所有基於銅纜的以太網電纜限制為100米。請勿在可能會導致安全隱患，因環境條件而損壞電纜或遭受電磁干擾（EMI）的區域中佈線。</span></span></p>
+<p><span title="Quick scroll up">Verify Connectivity <span>驗證連接性</span></span></p>
+<p><span title="Quick scroll up"><span>After the machine is connected and powered on (assuming Windows 7 or later), watch the system tray after boot-up to see if there is a wired network icon. The standard Windows 7 icons are:</span></span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">連接機器並打開電源後（假設使用Windows 7或更高版本），啟動後請查看系統托盤，以查看是否有有線網絡圖標。 <br/><span>Access the “network sharing center” to select the type of network access you need to have and add any devices required for the node (e.g., a printer). Verify access by opening the browser or using a command line tool to verify connectivity and addressing.</span><br/><span>訪問“網絡共享中心”以選擇所需的網絡訪問類型，並添加該節點所需的任何設備（例如打印機）。</span><br/><span>As an A+ certified technician, you will be introduced to the basics of computer networking, which is further covered when learning the CompTIA Net+ standards. Although CompTIA A+ does not test on the open systems interconnection model (OSI model), it is a theoretical model that is the basis for the way data travels through computer networks. When you click on an icon and connect to the Internet through a browser such as Google Chrome, Mozilla Firefox, or Internet Explorer, a request to connect is sent through a series of steps from the application layer down to the physical layer. All data physically enters and exits a computer node (client, server, or printer) through a network interface card (NIC) based on the type of medium being used (wireless, copper, or fiber-optic). The data packets are represented and interpreted using the binary number system.</span><br/><span>作為A +認證的技術人員，將向您介紹計算機網絡的基礎知識，在學習CompTIA Net +標準時將進一步介紹這些知識。儘管CompTIA A +沒有在開放系統互連模型（OSI模型）上進行測試，但它是一種理論模型，是數據在計算機網絡中傳輸的基礎。當您單擊圖標並通過瀏覽器（例如Google Chrome，Mozilla Firefox或Internet Explorer）連接到Internet時，連接請求將通過從應用程序層到物理層的一系列步驟發送。根據使用的介質類型（無線，銅纜或光纖），所有數據都通過網絡接口卡（NIC）物理地進入和退出計算機節點（客戶端，服務器或打印機）。數據包使用二進制數字系統表示和解釋。</span><br/></span></pre>
+<p><span title="Quick scroll up">Protocols <span>規約</span></span></p>
+<p><span title="Quick scroll up"><span>In computer networking, a protocol is a set of communication rules by which data communication occurs. The popularity of Ethernet is based on the standardization of protocols and ability to use the TCP/IP suite to carry data throughout a variety of hardware devices.</span></span></p>
+<p><span title="Quick scroll up"><span>在計算機網絡中，協議是通過其進行數據通信的一組通信規則。以太網的普及是基於協議的標準化以及使用TCP / IP套件在各種硬件設備中傳輸數據的能力。</span></span></p>
+<p><span title="Quick scroll up">Ethernet <span>乙太網路</span></span></p>
+<p><span title="Quick scroll up"><span>Ethernet is defined by the IEEE 802.3 specification, which sets the standard and interoperability between devices, allowing communication over computer networks. These specifications control how data physically travels between nodes on both the physical layer and the data link layer through media access control (MAC). The hardware controlled by these specifications include NICs, wiring (i.e., cat 5, 5e, and 6) including the RJ-45 connectors, switches, and hubs.</span></span></p>
+<p><span title="Quick scroll up"><span>以太網由IEEE 802.3規範定義，該規範設置了設備之間的標準和互操作性，從而允許通過計算機網絡進行通信。這些規範通過媒體訪問控制（MAC）控制數據在物理層和數據鏈路層上的節點之間的物理傳輸方式。這些規範所控制的硬件包括NIC，包括RJ-45連接器，交換機和集線器的佈線（即Cat 5、5e和6）。</span></span></p>
+<p><span title="Quick scroll up">TCP/IP </span></p>
+<p><span title="Quick scroll up"><span>Whereas Ethernet controls the physical data, transmission control protocol and Internet protocol (TCP/IP) is a suite of protocols that operate logically throughout the different layers of the OSI model as well as in the TCP/IP model.</span></span></p>
+<p><span title="Quick scroll up"><span>以太網控制物理數據，而傳輸控制協議和Internet協議（TCP / IP）是一套協議，可以在OSI模型的不同層以及TCP / IP模型中進行邏輯操作</span></span></p>
+<p><span title="Quick scroll up"><span></span></span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span><span></span></span><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre><br />PCH 12 << <a href='PCH 12.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

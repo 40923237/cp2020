@@ -1,0 +1,290 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923237 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923237 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='homework.html'>homework</a><ul class='dropdown'><li><a href='PCH 11.html'>PCH 11</a><li><a href='Coaxial Cable Connectors.html'>Coaxial Cable Connectors</a><li><a href='PCH 12.html'>PCH 12</a><li><a href='Verify Connectivity.html'>Verify Connectivity</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Coaxial Cable Connectors << <a href='Coaxial Cable Connectors.html'>Previous</a> <a href='Verify Connectivity.html'>Next</a> >> Verify Connectivity<br /><h1>PCH 12</h1>
+<p><span title="Quick scroll up">Overview <span>總覽</span></span></p>
+<p><span title="Quick scroll up"><span>In this module, we are going to discuss how the various Ethernet standards developed over time. We will also discuss why there is a need for these standards and the effect of these standards on the industry. In addition, we are going to cover various types of network media standards. We will cover 10Base-T (802.3i, 1990) as well as 100Base-T and 1000Base-T (1GBASE-T or 1 GigE) Ethernet standards, which are most commonly found in current office networks. We will discover how to plan a basic network connection using 100BaseT. Finally, we will cover differences between Ethernet and TCP/IP.</span></span></p>
+<p><span title="Quick scroll up"><span>在本模塊中，我們將討論隨著時間的推移如何開發各種以太網標準。我們還將討論為什麼需要這些標準以及這些標準對行業的影響。另外，我們將涵蓋各種類型的網絡媒體標準。我們將介紹10Base-T（802.3i，1990）以及100Base-T和1000Base-T（1GBASE-T或1 GigE）以太網標準，它們是當前辦公網絡中最常見的標準。我們將發現如何使用100BaseT規劃基本的網絡連接。最後，我們將介紹以太網和TCP / IP之間的差異。</span></span></p>
+<p><span title="Quick scroll up"><span>Before Ethernet was the dominant technology, there were multiple types of networking technologies competing for market share. At one point, Ethernet was just one of many competing standards, including token ring, fiber distributed data interface (FDDI), and more. By the late 1990s, a single standard was clearly the dominant choice in both office and residential networks: IEEE 802.3 Ethernet. Ethernet uses various media types, from coaxial cable to twisted-pair copper and fiber-optic cables (discussed in an earlier module). The 802.3 Ethernet standard and the concept of using frames for communication over various media, including Wireless 802.11, is predominant today, and it is vital to understand the fundamentals of Ethernet including the various speed and distance limitations each standard places on our networks.</span></span></p>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在以太網成為主導技術之前，存在多種類型的網絡技術爭奪市場份額。一方面，以太網只是眾多競爭標準之一，包括令牌環，光纖分佈式數據接口（FDDI）等。到1990年代後期，單一標準顯然已成為辦公室和住宅網絡中的主要選擇：IEEE 802.3以太網。以太網使用各種介質類型，從同軸電纜到雙絞銅纜和光纖電纜（在較早的模塊中討論）。 802.3以太網標準和使用幀在包括無線802.11在內的各種媒體上進行通信的概念如今非常盛行，了解以太網的基礎知識（包括每個標準對我們網絡的各種速度和距離限制）至關重要。<br/><span>The original 802.3 Ethernet standard sent data over coaxial cables at a half-duplex transmission rate which means devices can only transmit (TX) or Receive (RX) alternately at separate intervals because the data used the same path for both. This is analagous to communicating using a walkie-talkie rather than a telephone.</span><br/><span>最初的802.3以太網標準以半雙工傳輸速率通過同軸電纜發送數據，這意味著設備只能以單獨的間隔交替發送（TX）或接收（RX），因為這兩個數據使用相同的路徑。這類似於使用對講機而不是電話進行通信。</span><br/><span>This coaxial cable design became known as Thicknet and later Thinnet due to the size of the cables and was mostly used in bus and ring network topologies.<br/></span><span>由於電纜的尺寸，這種同軸電纜設計被稱為Thinnet，後來被稱為Thinnet，並且主要用於總線和環形網絡拓撲中。</span></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>Thicknet, the original IEEE 802.3 standard designated as 10Base5, provided a maximum bandwidth of 10Mbps and was limited in distance to 500 meters. Thinnet, or IEEE 10Base2, used a smaller type of coaxial and also provided a maximum bandwidth of 10 Mbps, but was limited to 185 meters. Eventually the industry transitioned from coaxial cabling to unshielded twisted-pair cabling.</span><br/><span>雙絞線電纜（稱為10BaseT）與第3類電纜可提供相同的10 Mbps半雙工最大帶寬，但由於缺少同軸電纜提供的額外屏蔽，因此距離限制為100米。儘管衰減增加（信號強度隨著距離的增加而損失），但由於易於安裝且總體成本較低，網絡設計人員仍選擇雙絞線佈線。同軸電纜不受歡迎，並且802.3以太網標準繼續發展，雙絞線佈線類別的數據速率更快。</span><br/><span>The design question that Ethernet had to answer was how a device should access the network. The nature of half-duplex transmission (TX or RX) over a single wire pair meant that collisions were imminent. Should the access be deterministic and orderly, or contention-based and chaotic? The older ring-based networks, such as token ring, were developed upon the premise that order was necessary: each machine would wait for its turn to transmit its data until it received the electronic token that was passed around the ring. This is similar to the “talking stick” or “speaker’s staff” used by Native Americans and other aboriginal tribes where the staff (token) gave the person access to speak and the remaining group members listened. Ethernet, on the other hand, is premised upon a contention-based model. This is more chaotic and allows any device on the network to transmit anytime it wishes. The problem with this type of philosophy is figuring out how to prevent two devices from transmitting at the same time and causing a collision of the data. With Ethernet, the answer came in the form of a media access control method called carrier sense multiple access/collision detect (CSMA/CD).</span><br/></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">以太網必須回答的設計問題是設備應如何訪問網絡。通過單線對進行半雙工傳輸（TX或RX）的性質意味著衝突迫在眉睫。訪問應該是確定性和有序的，還是基於競爭的且混亂的？較舊的基於環的網絡（例如令牌環）是在必須有順序的前提下開發的：每台機器都將等待其輪流發送其數據，直到接收到圍繞環傳遞的電子令牌為止。這類似於美洲原住民和其他原住民部落使用的“說話棒”或“發言人的工作人員”，其中工作人員（令牌）使該人員可以發言，其餘的小組成員則可以收聽。另一方面，以太網以基於競爭的模型為前提。這更加混亂，並且允許網絡上的任何設備在其希望的任何時間進行傳輸。這種類型的原理存在的問題是，要弄清楚如何防止兩個設備同時傳輸並導致數據衝突。對於以太網，答案是以一種稱為載波偵聽多路訪問/衝突檢測（CSMA / CD）的媒體訪問控制方法的形式出現的。<br/><br/><span>The nature of half-duplex transmission brought about the need for CSMA/CD, which works by allowing all devices to transmit data whenever they wish. The carrier sense portion means that the device “listens” to the network first to find a “break” in the conversation. If the device doesn’t hear other devices transmitting, then it begins its transmission. Multiple access refers to every device having equal access to the network at all times. This is unlike the token ring network in which each device had to wait for the signal (token) before transmitting. Finally, we have collision detection as part of the CSMA/CD control method. If, by chance, two devices both were ready to transmit, they “listened” to the network for a “lull” in the conversation, and both started transmitting at the same time, the devices are able to detect that they both transmitted at the same time and caused a collision.</span><br/></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">半雙工傳輸的性質帶來了對CSMA / CD的需求，它允許所有設備在需要時傳輸數據。運營商感知部分意味著設備首先“監聽”網絡以在會話中找到“中斷”。如果該設備聽不到其他設備的傳輸，則開始傳輸。多路訪問是指每台設備始終具有對網絡的平等訪問權限。這與令牌環網絡不同，在令牌環網絡中，每個設備都必須在發送之前等待信號（令牌）。最後，我們將碰撞檢測作為CSMA / CD控制方法的一部分。如果偶然地兩個設備都準備好發送，則它們在通話中“偵聽”網絡中的“失敗”，並且兩個設備都同時開始發送，則這些設備能夠檢測到它們都在發送時發送。同時又造成了碰撞。<br/><span>The image below depicts both the CSMA/CD and CSMA/CA simplified algorithm. The left branch is CSMA/CD used by half-duplex Ethernet and the right branch is CSMA/CA used by 802.11 wireless LAN, which is also half-duplex.</span><br/><span>下圖描述了CSMA / CD和CSMA / CA簡化算法。左分支是半雙工以太網使用的CSMA / CD，右分支是802.11無線LAN（也是半雙工）使用的CSMA / CA。</span><br/><span>In the example shown below, four devices are connected in a physical bus topology. Each device has equal access to the network. Here, all the devices are listening, trying to determine if any other device is communicating before beginning transmission.</span></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">在下面顯示的示例中，四個設備以物理總線拓撲連接。每個設備對網絡都有平等的訪問權限。在這裡，所有設備都在監聽，試圖確定是否有其他設備在開始傳輸之前進行通信。<br/><span>In the next image below, we see an example of two devices that transmitted at the same time. This simultaneous transmission resulted in a data collision, causing the transmission to be broken.<br/>在下面的下一個圖像中，我們看到兩個同時傳輸的設備的示例。這種同時傳輸導致數據衝突，導致傳輸中斷。<br/>When a collision is detected, both devices choose a backoff time at random, and then attempt to retransmit again. In the diagram below, the computers choose to wait 200 milliseconds and 300 milliseconds, respectively. When that time is up, they will attempt to sense if another machine is already transmitting. If there is nothing detected, the first machine will transmit its message. Once completed, the second machine will then transmit its message, after its 300 millisecond wait time.<br/></span></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">當檢測到衝突時，兩個設備都會隨機選擇一個退避時間，然後嘗試重新傳輸。在下圖中，計算機分別選擇等待200毫秒和300毫秒。時間到時，他們將嘗試檢測另一台機器是否已經在傳輸。如果未檢測到任何內容，則第一台機器將發送其消息。一旦完成，第二台機器將在其300毫秒的等待時間之後發送其消息。</span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>The nature of half-duplex transmission brought about the need for CSMA/CD, which works by allowing all devices to transmit data whenever they wish. The carrier sense portion means that the device “listens” to the network first to find a “break” in the conversation. If the device doesn’t hear other devices transmitting, then it begins its transmission. Multiple access refers to every device having equal access to the network at all times. This is unlike the token ring network in which each device had to wait for the signal (token) before transmitting. Finally, we have collision detection as part of the CSMA/CD control method. If, by chance, two devices both were ready to transmit, they “listened” to the network for a “lull” in the conversation, and both started transmitting at the same time, the devices are able to detect that they both transmitted at the same time and caused a collision.<br/>半雙工傳輸的性質帶來了對CSMA / CD的需求，它允許所有設備在需要時傳輸數據。運營商感知部分意味著設備首先“監聽”網絡以在會話中找到“中斷”。如果該設備聽不到其他設備的傳輸，則開始傳輸。多路訪問是指每台設備始終具有對網絡的平等訪問權限。這與令牌環網絡不同，在令牌環網絡中，每個設備都必須在發送之前等待信號（令牌）。最後，我們將碰撞檢測作為CSMA / CD控制方法的一部分。如果偶然地兩個設備都準備好發送，則它們在通話中“偵聽”網絡中的“失敗”，並且兩個設備都同時開始發送，則這些設備能夠檢測到它們都在發送時發送。同時又造成了碰撞。<br/>The image below depicts both the CSMA/CD and CSMA/CA simplified algorithm. The left branch is CSMA/CD used by half-duplex Ethernet and the right branch is CSMA/CA used by 802.11 wireless LAN, which is also half-duplex.<br/></span></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">下圖描述了CSMA / CD和CSMA / CA簡化算法。左分支是半雙工以太網使用的CSMA / CD，右分支是802.11無線LAN（也是半雙工）使用的CSMA / CA。<br/><span>In the example shown below, four devices are connected in a physical bus topology. Each device has equal access to the network. Here, all the devices are listening, trying to determine if any other device is communicating before beginning transmission.</span><br/><span>在下面顯示的示例中，四個設備以物理總線拓撲連接。每個設備對網絡都有平等的訪問權限。在這裡，所有設備都在監聽，試圖確定是否有其他設備在開始傳輸之前進行通信。</span><br/><span>In the next image below, we see an example of two devices that transmitted at the same time. This simultaneous transmission resulted in a data collision, causing the transmission to be broken.</span><br/><span>在下面的下一個圖像中，我們看到兩個同時傳輸的設備的示例。這種同時傳輸導致數據衝突，導致傳輸中斷。</span><br/><span>When a collision is detected, both devices choose a backoff time at random, and then attempt to retransmit again. In the diagram below, the computers choose to wait 200 milliseconds and 300 milliseconds, respectively. When that time is up, they will attempt to sense if another machine is already transmitting. If there is nothing detected, the first machine will transmit its message. Once completed, the second machine will then transmit its message, after its 300 millisecond wait time.</span><br/><span>當檢測到衝突時，兩個設備都會隨機選擇一個退避時間，然後嘗試重新傳輸。在下圖中，計算機分別選擇等待200毫秒和300毫秒。時間到時，他們將嘗試檢測另一台機器是否已經在傳輸。如果未檢測到任何內容，則第一台機器將發送其消息。一旦完成，第二台機器將在其300毫秒的等待時間之後發送其消息。</span><br/></span></pre>
+<p id="N10690" lang="">Finally, we need to discuss the various standards we use in Ethernet in terms of bandwidth and distance limitations.</p>
+<p id="N10693" lang="">The Ethernet standard also determines the type of cable, its bandwidth, and its distance limitation. It is important to know these standards, especially those that relate to a category 3, 5, 5e, and 6 cabling standard.</p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">最後，我們需要討論帶寬和距離限制方面在以太網中使用的各種標準。
+
+以太網標準還確定電纜的類型，帶寬和距離限制。重要的是要知道這些標準，尤其是與3、5、5e和6類佈線標準有關的標準。</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>When discussing data flow and speed, the two terms referred to are bandwidth and throughput. Often used interchangeably, the two terms are different and need to be understood. Simply put, bandwidth is the theoretical maximum of the given standard, whereas throughput is the actual potential in a real-world scenario. Many factors affect actual throughput, such as half-duplex vs. full-duplex, cable length, and quality. Both bandwidth and throughput are measured in bits per second (bps) with the prefix K (kilobit), M (megabit), or G (gigabit). Each Ethernet category (cat) cable supports a different Ethernet standard and thereby determines the bandwidth capacity or maximum throughput. The table below shows the bandwidth according to Ethernet type.</span><br/><span>在討論數據流和速度時，所指的兩個術語是帶寬和吞吐量。這兩個術語通常可以互換使用，它們是不同的，需要理解。簡而言之，帶寬是給定標準的理論最大值，而吞吐量是實際情況下的實際潛力。許多因素會影響實際吞吐量，例如半雙工與全雙工，電纜長度和質量。帶寬和吞吐量都以比特每秒（bps）為單位，前綴為K（千比特），M（兆比特）或G（千兆比特）。每條以太網類別（貓）電纜均支持不同的以太網標準，從而確定帶寬容量或最大吞吐量。下表顯示了根據以太網類型的帶寬。</span><br/><span>Now that you have a general understanding of networking hardware, application of standards for LANs (local area networks) and WANs (wide area networks), and the limitations of the media used, you should be able to plan adding a network node to an already existing network. For example, you could add a new computer to your company’s wired LAN. In such situations, the majority of the hardware installation is plug and play (PnP), but you still have to know that the hardware and media chosen are correct, configure software settings for network access, and verify the new hardware will function properly to allow user access to all network resources.</span><br/></span></pre>
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"><span aria-label="語音輸入" class="tw-menu-btn hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4Q7zQwAHoECAQQDQ" id="tw-mic" jsaction="RF3jH" role="button" tabindex="0"><span class="tw-menu-btn-image"></span><span class="tw-menu-btn-image CFq0kc Hnn8f z1asCe JXrXlb" title="語音翻譯"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"></path></svg></span></span></div>
+<span aria-label="清除原文文字" class="tw-menu-btn KTDgic hide-focus-ring" data-ved="2ahUKEwit4oX3zdHsAhWJzIsBHbenBd4QxZgCMAB6BAgEEA4" id="tw-cst" jsaction="Zbu5ce" role="button" tabindex="0"><span class="tw-menu-btn-image z1asCe wuXmqc" title="清除原文文字"><svg focusable="false" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span></span></div>
+<div class="QmZWSe">
+<div class="DHcWmd"></div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">既然您已經對網絡硬件，LAN（局域網）和WAN（廣域網）的標準的應用以及所用媒體的限制有了一般的了解，那麼您應該能夠計劃將網絡節點添加到已經現有網絡。例如，您可以將新計算機添加到公司的有線局域網中。在這種情況下，大多數硬件安裝都是即插即用（PnP），但您仍然必須知道所選的硬件和媒體是正確的，配置用於網絡訪問的軟件設置，並驗證新硬件是否正常運行以允許用戶訪問所有網絡資源。<br/><span>Current technology in most small office/home office (SOHO) environments will have auto-sensing networking hardware. There are older switches and routers that still remain in some networks that do not have the ability to run at 100/1000BaseT, so check your network documentation!</span><br/></span><span>大多數小型辦公室/家庭辦公室（SOHO）環境中的當前技術都將具有自動感應網絡硬件。有些舊的交換機和路由器仍然保留在某些不能在100 / 1000BaseT上運行的網絡中，因此請查看您的網絡文檔！</span></pre>
+<p><span title="Quick scroll up">Media <span>媒體</span></span></p>
+<p><span title="Quick scroll up"><span>Installing a wired connection onto the network means knowing if the NIC (network interface card) of the device can also auto-negotiate throughput based on the cable media used. Again, new or current technology should be auto-sensing and auto-negotiating (speed, duplex mode and other network parameters). The most important decision for the technician is selecting the correct type of Ethernet cable to connect the device. Recall that the cable standards will restrict distance as well as throughput. A cat 5 cable was standard for 100BaseT but will limit throughput to 100 Mbps so you must use cat 5e or cat 6 if you are trying to achieve 1000BaseT (1 Gbps).</span></span></p>
+<p><span title="Quick scroll up"><span>在網絡上安裝有線連接意味著要知道設備的NIC（網絡接口卡）是否還可以根據所使用的電纜介質自動協商吞吐量。同樣，新技術或當前技術應該是自動感應和自動協商（速度，雙工模式和其他網絡參數）。對於技術人員而言，最重要的決定是選擇正確的以太網電纜類型來連接設備。回想一下，電纜標準將限制距離以及吞吐量。 Cat 5電纜是100BaseT的標準配置，但會將吞吐量限制為100 Mbps，因此，如果要實現1000BaseT（1 Gbps），則必須使用Cat 5e或Cat 6。</span></span></p>
+<p><span title="Quick scroll up">Distance <span>距離</span></span></p>
+<p><span title="Quick scroll up"><span>Most current SOHO environments will have Ethernet wall jacks internally connecting to the next network device, be it a switch or a hub. But, if there is not a connection already present, you must remember that all copper-based Ethernet cable is limited to 100 meters. Do not run the wire in an area where the cabling can cause a safety hazard, become damaged due to environmental conditions, or suffer from electromagnetic interference (EMI).</span></span></p>
+<p><span title="Quick scroll up"><span>當前大多數SOHO環境將在內部將以太網牆壁插孔連接到下一個網絡設備，無論是交換機還是集線器。但是，如果尚不存在連接，則必須記住所有基於銅纜的以太網電纜限制為100米。請勿在可能會導致安全隱患，因環境條件而損壞電纜或遭受電磁干擾（EMI）的區域中佈線。</span></span></p>
+<br />Coaxial Cable Connectors << <a href='Coaxial Cable Connectors.html'>Previous</a> <a href='Verify Connectivity.html'>Next</a> >> Verify Connectivity</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

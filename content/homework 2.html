@@ -1,0 +1,527 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923237 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923237 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li class='has-children'><a href='homework 1.html'>homework 1</a><ul class='dropdown'><li class='has-children'><a href='PCH11.html'>PCH11</a><ul class='dropdown'><li><a href='Overview   總覽.html'>Overview   總覽</a></li></ul><li class='has-children'><a href='PCH12.html'>PCH12</a><ul class='dropdown'><li><a href='Overview 總覽.html'>Overview 總覽</a></li></li></ul></ul><li><a href='homework 2.html'>homework 2</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">Overview 總覽 << <a href='Overview 總覽.html'>Previous</a> <br /><h1>homework 2</h1>
+<div class="line number1 index0 alt2">
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">InputElement studListUrl = querySelector("#studListUrl");
+  String studUrl;
+  InputElement courseName = querySelector("#courseName");
+  String cName;
+  // 將 Label 改為 Textarea, 避免產生過程結果嵌入所在頁面
+  TextAreaElement output = querySelector("#output");
+   
+main() {
+  querySelector("#submit").onClick.listen((e) =&gt; grouping());
+}
+   
+grouping() {
+  output.innerHtml = "";
+   
+  if (studListUrl.value != "") {
+    studUrl = studListUrl.value;
+  } else {
+    studUrl = 'https://nfulist.herokuapp.com';
+  }
+   
+  if (courseName.value != "") {
+    cName = courseName.value;
+  } else {
+    cName = "cp2020";
+  }
+   
+  // 組序由 1 開始
+  int gth = 1;
+  // 迴圈序號變數
+  int i;
+  int j;
+  int total;
+  int inc;
+  // 每組學員暫存數列
+  var gpList = [];
+  // 全班分組數列
+  var group = [];
+  // 各組人數數列
+  var numList = [];
+   
+  HttpRequest.getString(studUrl).then((String resp) {
+    // 利用 trim() 去除字串最後的跳行符號, 之後再利用 split() 根據 \n 轉為數列
+    var studList = resp.trim().split("\n");
+    // 數列利用 shuffle() 方法以隨機方法弄亂順序
+    studList.shuffle();
+    total = studList.length;
+    output.text += "全班總計" + total.toString() + " 人\n";
+    numList = getNumList(studList.length);
+    inc = 0;
+    for (i in numList){
+      // 列印區隔符號
+      output.text += '=' * 20 + "\n";
+      output.text += "group $gth 有 " + i.toString() + " 人: \n";
+      gpList = [];
+      for (j = 0; j &lt; i; j++){
+        output.text += studList[j+inc] + "\n";
+        // 在各分組數列中加入將對應的學員學號
+        gpList.add(studList[j+inc]);
+      }
+      gth = gth + 1;
+      inc = inc + j;
+        //output.text += studList[j] + "\n";
+        // 逐步將各組暫存的分組數列加入全班分組數列中
+      gpList.sort();
+      group.add(gpList);
+    }
+    // 列出全班分組數列
+    output.text += group.toString() + "\n";
+    // 列出已經排序後的分組名單
+    output.text += '=' * 25 + "\n";
+    output.text += '以下為排序後的各組成員名單: \n';
+    gth = 1;
+    /*
+    404231
+    s4052
+    4062
+    s4072
+    4082
+    5072
+    5083
+    */
+    // 先列出純文字以 \n 跳行組員資料
+    for (i=0; i &lt; group.length; i++){
+      // 列印區隔符號
+      output.text += '=' * 20 + "\n";
+      output.text += "group $gth \n";
+      gpList = [];
+      for (j=0; j &lt; group[i].length; j++){
+        output.text += group[i][j] + "\n";
+      }
+      gth = gth + 1;
+    }
+      
+    gth = 1;
+    // 最後列出超文件以 &lt;br\&gt; 跳行組員資料, 包含倉儲與網站
+    for (i=0; i &lt; group.length; i++){
+      // 列印區隔符號
+      output.text += '\n' + '=' * 30 + "&lt;br \&gt;";
+      output.text += "group $gth &lt;br \&gt;";
+      gpList = [];
+      for (j=0; j &lt; group[i].length; j++){
+          if (group[i][j].startsWith('4052') || group[i][j].startsWith('4072')) {
+              output.text += "Repository: &lt;a href='https://github.com/s" +
+                                      group[i][j] + "/" + cName + "'&gt;" + group[i][j] + 
+                                      "&lt;/a&gt;" + " | Site: &lt;a href='https://s" + group[i][j] +
+                                      ".github.io/" + cName + "'&gt;" + group[i][j] +
+                                      "&lt;/a&gt;&lt;br \&gt;";
+          }
+          else {
+              output.text += "Repository: &lt;a href='https://github.com/" +
+                                      group[i][j] + "/" + cName +"'&gt;" + group[i][j] +
+                                      "&lt;/a&gt;" + " | Site: &lt;a href='https://" + group[i][j] +
+                                      ".github.io/" + cName + "'&gt;" + group[i][j] +
+                                      "&lt;/a&gt;&lt;br \&gt;";
+          }
+      }
+      gth = gth + 1;
+    }
+  });
+}
+   
+List getNumList(int total){
+  // total student number
+  // int total = 65;
+  // initial each group expect to be "eachGrp" number of people
+  int eachGrp = 10;
+  // may divide into "grpNum" number of group
+  int grpNum = total ~/ eachGrp;
+  // vacant list
+  var splits = [];
+  // find remainder when total number divid into "grpNum" number of group
+  int remainder = total % grpNum;
+  // number of people in one group by calculation
+  int calGrp = total ~/ grpNum;
+   
+  for (int i = 0; i &lt; grpNum; i++) {
+    splits.add(calGrp);
+  }
+  //print(splits);
+   
+  for (int i = 0; i &lt; remainder; i++) {
+    splits[i] += 1;
+  }
+  //print(splits);
+  return splits;
+ }&lt;/pre&gt;
+&lt;p&gt;index.html&lt;/p&gt;
+&lt;pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"&gt;&lt;h4&gt;亂數分組:&lt;/h4&gt;
+學員名單 URL: &lt;input type="text" id="studListUrl" size="60" value="https://nfulist.herokuapp.com"&gt;&lt;br /&gt;
+課程代號: &lt;input type="text" id="courseName" size="15" value="cp2020"&gt;&lt;br /&gt;
+&lt;input type="submit" value="開始分組" id="submit"&gt;&lt;br /&gt;
+&lt;textarea id="output" cols="80" rows="10"&gt;&lt;/textarea&gt;&lt;/pre&gt;
+&lt;p&gt;style.css&lt;/p&gt;
+&lt;pre class="brush:css;auto-links:false;toolbar:false" contenteditable="false"&gt;body {
+  color: white;
+  font-size: 20px;
+}
+  
+input, select, textarea {
+font-size: 100%;
+}&lt;/pre&gt;
+&lt;p&gt;even_grouping.py&lt;/p&gt;
+&lt;pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"&gt;import random
+import requests
+   
+# getNumList 主要在每組最低人數下, 將不足 10 人的分組
+# 平均分配至各組
+def getNumList(total, eachGrp=10):
+    # total is the number of students
+    # each group at least 10 students
+    #eachGrp = 10;
+    # may divide into "grpNum" number of group
+    grpNum = total // eachGrp;
+    # check grpNum
+    #print(grpNum)
+    # vacan list
+    splits = []
+    # find remainder when total number divid into "grpNum" number of group
+    remainder = total % grpNum
+    # number of people in one group by calculation
+    calGrp = total // grpNum
+       
+    for i in range(grpNum):
+        splits.append(calGrp)
+           
+    # check first splits
+    #print(splits)
+     
+    for i in range(remainder):
+        splits[i] += 1
+       
+    # check final splits
+    #print(splits);
+    return splits;
+   
+# 儲存學生名單資料的 url
+target_url = "http://mde.tw/cp2020/downloads/get_student_list/2020spring_cd_2a_list.txt"
+# 利用 requests 讀取 url 中的資料
+f = requests.get(target_url)
+# get student list from target_url
+# 利用 splitlines() 將資料放入數列 studList
+studList = f.text.splitlines()
+# 每組預計分組的最低人數
+num_in_one_group = 10
+# 每組學員暫存數列
+gpList = []
+# 全班分組數列
+group = []
+# 各組人數數列
+numList = []
+# get numList
+numList = getNumList(len(studList), num_in_one_group)
+# check numList
+# 列出已經補齊的各組人數數列
+print("預計各組人數數列:" + str(numList))
+   
+output = ""
+gth = 1
+inc = 0
+   
+# 弄亂 studList
+random.shuffle(studList)
+output += "以下為尚未排序前的各組學員學號: \n"
+for i in numList:
+    # 列印區隔符號
+    output += '=' * 20 + "\n";
+    output += "group " + str(gth) + " 有 " + str(i) + " 人: \n"
+    # 每組學員暫存數列, 在此 reset
+    gpList = []
+    for j in range(i):
+        output += studList[j+inc] + "\n"
+        # 在各分組數列中加入將對應的學員學號
+        gpList.append(studList[j+inc])
+         
+    gth = gth + 1
+    inc = inc + j
+    # 將各組學員數列依照學號排序
+    gpList.sort()
+    group.append(gpList)
+   
+# 列出尚未排序前的分組結果
+print(output)
+# 列出已經完成排序的分組數列
+print("已經排序後的分組數列:" + str(group))
+   
+output = ""
+# 列出已經排序後的分組名單
+output += '=' * 25 + "\n"
+output += '以下為排序後的各組成員名單:\n'
+gth = 1
+   
+# 先列出純文字以 \n 跳行組員資料
+for i in range(len(group)):
+    # 列印區隔符號
+    output += '=' * 20 + "\n"
+    output += "group" + str(gth) + "\n"
+    gpList = []
+       
+    for j in range(len(group[i])):
+        output += str(group[i][j]) + "\n"
+         
+    gth = gth + 1
+       
+print(output)&lt;/pre&gt;
+&lt;h4&gt;使用 Brython&lt;/h4&gt;
+&lt;p&gt;&lt;a href="http://mde.tw/lab/content/Python.html"&gt;http://mde.tw/lab/content/Python.html&lt;/a&gt;&lt;/p&gt;
+&lt;pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"&gt;# 利用 Brython 內建的 open 開啟 url 後, 以 read() 將資料取出
+output = open('http://mde.tw/cp2020/downloads/get_student_list/2020spring_cd_2a_list.txt').read()
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="oSioSc">
+<div id="tw-target">
+<div class="g9WsWb" id="kAz1tf">
+<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="g9WsWb">
+<div id="KnM9nf">
+<div class="tw-menu" id="tw-smenu"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span><span></span></span><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre><br />Overview 總覽 << <a href='Overview 總覽.html'>Previous</a> </div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

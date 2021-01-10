@@ -663,14 +663,33 @@ output = open('http://mde.tw/cp2020/downloads/get_student_list/2020spring_cd_2a_
 <div class="oSioSc">
 <div id="tw-target">
 <div class="g9WsWb" id="kAz1tf">
-<div class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0"></div>
+<h1 class="tw-ta-container hide-focus-ring tw-lfl" id="tw-target-text-container" tabindex="0">homework 3</h1>
+<div class="tw-ta-container hide-focus-ring tw-lfl" tabindex="0">Exercise 13 (and<span> </span><a href="https://www.practicepython.org/solution/2014/07/25/13-fibonacci-solutions.html">Solution</a>)   <span>練習13（和解決方案）</span>
+<p><span>Write a program that asks the user how many Fibonnaci numbers to generate and then generates them. Take this opportunity to think about how you can use functions. Make sure to ask the user to enter the number of numbers in the sequence to generate.(<em>Hint: The Fibonnaci seqence is a sequence of numbers where the next number in the sequence is the sum of the previous two numbers in the sequence. The sequence looks like this: 1, 1, 2, 3, 5, 8, 13, …</em><span>)</span></span></p>
+<p><span><span>編寫一個程序，詢問用戶要生成多少斐波那契數字，然後生成它們。藉此機會考慮如何使用功能。確保要求用戶輸入要生成的序列中的數字。（提示：Fibonnaci序列是一個數字序列，其中序列中的下一個數字是序列中前兩個數字的和。該序列看起來像這樣：1、1、2、3、5、8、13…）</span></span></p>
+<p><span><span>List Remove Duplicates <img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></span></span></p>
+Exercise 14 (and<span> </span><a href="https://www.practicepython.org/solution/2014/05/21/14-list-remove-duplicates-solutions.html">Solution</a>)  <span>練習14（和解決方案）</span>
+<p><span>Write a program (function!) that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates.</span></p>
+<p><span>編寫一個包含一個列表並返回一個新列表的程序（函數！），該列表包含第一個列表的所有元素減去所有重複項。</span></p>
+<p>Extras:</p>
+<ul>
+<li>Write two different functions to do this - one using a loop and constructing a list, and another using sets.</li>
+<li>Go back and do<span> </span><a href="https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html">Exercise 5</a><span> </span>using sets, and write the solution for that in a different function. </li>
+<li> <span>附加功能： 編寫兩個不同的函數來執行此操作-一個使用循環並構造一個列表，另一個使用集合。 返回並使用集合進行練習5，然後使用其他函數編寫解決方案。</span><span></span></li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="g9WsWb">
 <div id="KnM9nf">
-<div class="tw-menu" id="tw-smenu"></div>
+<div class="tw-menu" id="tw-smenu">
+<br/>Discussion  <span>討論區</span>
+<p>Concepts for this week:</p>
+<ul>
+<li>Sets   <span>本週的概念： 套裝</span></li>
+</ul>
 </div>
 </div>
 </div>
@@ -703,6 +722,12 @@ output = open('http://mde.tw/cp2020/downloads/get_student_list/2020spring_cd_2a_
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
 </div>
 </div>
 </div>
@@ -712,17 +737,113 @@ output = open('http://mde.tw/cp2020/downloads/get_student_list/2020spring_cd_2a_
 </div>
 </div>
 </div>
+<h3 id="sets">Sets</h3>
+<p><span>In mathematics, a </span><strong>set</strong><span><span> </span>is a collection of elements where no element is repeated. This becomes useful because if you know your data is stored in a set, you are guaranteed to have unique elements.</span></p>
+<p><span>在數學中，集合是元素的集合，其中不重複任何元素。這很有用，因為如</span></p>
+<pre><code class="language-python" data-lang="python"> <span class="n">names</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+  <span class="n">names</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">"Michele"</span><span class="p">)</span>
+  <span class="n">names</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">"Robin"</span><span class="p">)</span>
+  <span class="n">names</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s">"Michele"</span><span class="p">)</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">names</span><span class="p">)</span></code></pre>
+<p><span>果您知道數據存儲在集合中，則可以保證具有唯一</span></p>
+<br/>Features of sets <span>集的特徵</span>
+<ul>
+<li>Sets are<span> </span><strong>not ordered</strong>. This means that there is no “first element” or “last element.” There are just “elements”. You cannot ask a set for it’s “next element”.</li>
+<li><span>集合不排序。這意味著不存在“第一個元素”或“最後一個元素”。只有“元素”。您不能向集合索要“下一個元素”。</span></li>
+<li>There are no repeat elements in sets.</li>
+<li><span>集合中沒有重複元素。</span></li>
+<li>You can convert between sets and lists very easily.</li>
+<li><span>您可以非常輕鬆地在集合和列表之間進行轉換。</span><span></span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
-</div>
-</div>
-</div>
-</div>
-<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span></span><br/></span></pre>
-</div>
-</div>
-</div>
-</div>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<h2 id="in-python">In Python </h2>
+<p><span>In Python, you make and use a set with the </span><code class="highlighter-rouge">set()</code><span><span> </span>keyword. For example:</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">在Python中，您可以使用set（）關鍵字來創建和使用set。<br/></span></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> names = set()
+  names.add("Michele")
+  names.add("Robin")
+  names.add("Michele")
+  print(names)</pre>
+<pre><span>And the output will be; </span><span lang="zh-TW">輸出將是；<br/></span></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">  set(['Michele', 'Robin'])</pre>
+<pre><span>You can do to a set almost anything you can do to a list (except ask for things like “the third element”). See the </span><a href="https://docs.python.org/3.3/library/stdtypes.html?highlight=set#set">Python documentation about sets</a><span><span> </span>to get a full list of things you can do to sets.</span><br/><span>您可以設置一個集合，幾乎可以對列表執行任何操作（要求“第三個元素”之類的東西除外）。請參閱有關集合的Python文檔以獲取可以對集合進行操作的完整列表。</span><br/><span>You can convert from a list to a set and a set to a list pretty easily:</span><br/><span>您可以很容易地將列表轉換為集合，然後將集合轉換為列表：</span></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">names = ["Michele", "Robin", "Sara", "Michele"]
+  names = set(names)
+  names = list(names)
+  print(names)</pre>
+<pre><span>And the result of this will be: 結果是：<br/></span></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> ['Michele', 'Robin', 'Sara']</pre>
+<pre><span>Cows And Bulls </span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/><span><span> </span></span><img class="chili" src="https://www.practicepython.org/assets/img/chili-liz-20x20.png"/></pre>
+<p>Exercise 18 (and<span> </span><a href="https://www.practicepython.org/solution/2014/07/18/18-cows-and-bulls-solutions.html">Solution</a>) <span>練習18（和解決方案）</span></p>
+<p><span></span><span>Create a program that will play the “cows and bulls”game with the user. The game works like this:</span></p>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">創建一個程序，將與用戶一起玩“牛與牛”遊戲。<br/><span>Randomly generate a 4-digit number. Ask the user to guess a 4-digit number. For every digit that the user guessed correctly </span><em>in the correct place</em><span>, they have a “cow”. For every digit the user guessed correctly<span> </span></span><em>in the wrong place</em><span><span> </span>is a “bull.” Every time the user makes a guess, tell them how many “cows” and “bulls” they have. Once the user guesses the correct number, the game is over. Keep track of the number of guesses the user makes throughout teh game and tell the user at the end.</span><br/><span>隨機生成一個4位數字。要求用戶猜測一個4位數字。對於用戶在正確位置正確猜到的每個數字，他們都有一個“牛”。用戶在錯誤的位置正確猜出的每個數字都是“牛”。每次用戶猜測時，告訴他們他們有多少“牛”和“牛”。一旦用戶猜出正確的數字，遊戲就結束了。跟踪用戶在整個遊戲中所做的猜測數量，並在最後告訴用戶。</span><br/><span>Say the number generated by the computer is 1038. An example interaction could look like this:</span><br/><span>假設計算機生成的數字是1038。</span><br/></span></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> Welcome to the Cows and Bulls Game! 
+  Enter a number: 
+  &gt;&gt;&gt; 1234
+  2 cows, 0 bulls
+  &gt;&gt;&gt; 1256
+  1 cow, 1 bull
+  ...
+</pre>
+<pre><span>Until the user guesses the number.  </span><span lang="zh-TW">直到用戶猜出數字。<br/></span></pre>
+<br/>Concepts for this week: <span>本週的概念：</span>
+<ol>
+<li>Randomness (we’ve covered this a few times before. Mainly in<span> </span><a href="https://www.practicepython.org/exercise/2014/04/02/09-guessing-game-one.html">a previous exercise</a>.)</li>
+<li>Functions (covered in a<span> </span><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html">previous exercise</a><span> </span>also)</li>
+<li>Main method</li>
+</ol>
+<pre><span lang="zh-TW"><span>隨機性（我們之前已經討論過幾次了。主要是在以前的練習中。） 功能（也在上一練習中介紹過） 主要方法<br/></span></span></pre>
+<br/>Main method <span>主要方法</span>
+<p><span>Since we have covered randomness and functions, we still need to cover the idea of a “main” method. If you have programmed before, you will wonder why you haven’t needed a main method so far in your Python code.</span></p>
+<p><span>由於我們已經涵蓋了隨機性和函數，因此我們仍然需要涵蓋“主”方法的思想。如果您以前編程過，您會想知道為什麼到目前為止您的Python代碼中不需要主要方法。</span></p>
+<p><span>First, here is how you do it: 首先，這是您的操作方法</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> def square(num):
+    return num * num
+
+  if __name__=="__main__":
+    user_num = input("Give me a number: ")
+    print(square(num))</pre>
+<pre><span>Note that in both </span><code class="highlighter-rouge">__name__</code><span><span> </span>and<span> </span></span><code class="highlighter-rouge">__main__</code><span>, there are TWO underscore (</span><code class="highlighter-rouge">_</code><span>) characters.</span><br/><span>請注意，在__name__和__main__中，都有兩個下劃線（_）字符。</span><br/><span>If you run this program, it behaves as expected: asking the use for a number and printing out the square in return. However, you might be wondering - how is this different from the way we’ve been writing programs until this point?</span><br/><span>如果您運行該程序，它的行為將與預期的一樣：要求輸入數字並打印出正方形。但是，您可能想知道-到目前為止，這與我們編寫程序的方式有何不同？</span></pre>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> def square(num):
+    return num * num
+
+  user_num = input("Give me a number: ")
+  print(square(num))</pre>
+<pre><span>You are correct if you think the second example will have THE SAME BEHAVIOR as in the first case. At least the way we’ve been running Python files until this point. I will attempt to explain.</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">如果您認為第二個示例將具有與第一種情況相同的行為，則您是正確的。至少到現在為止，我們一直在運行Python文件的方式。我將嘗試解釋。</span></pre>
+<pre><span>Python does not have a specified entry point like many other languages (for example, C++ always looks for a </span><code class="highlighter-rouge">void main()</code><span><span> </span>method to run). Python files and programs are executed line by line by the Python interpreter, from however the Python file or program is run. When the definition of a function is reached by the interpreter, the function is not run, but rather loaded to be run later. (We discussed this when we talked about functions in a<span> </span></span><a href="https://www.practicepython.org/exercise/2014/04/16/11-check-primality-functions.html">previous post</a><span>.) Whatever is written outside of a function will get executed immediately - this includes creating variables and calling the functions that were previously loaded.</span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">Python沒有像許多其他語言一樣具有指定的入口點（例如，C ++始終尋找要運行的void main（）方法）。 Python解釋器逐行執行Python文件和程序，但是會運行Python文件或程序。當解釋器到達函數的定義時，該函數不會運行，而是會加載以供以後運行。 （在上一篇文章中討論函數時，我們已經進行了討論。）在函數外部編寫的任何內容都將立即執行-這包括創建變量和調用先前加載的函數。<br/></span></pre>
+<p>There are (most commonly) two ways to run a Python file:</p>
+<ol>
+<li>“Just running it” (which you can do from the terminal, through the “Run” button in IDLE, etc.)</li>
+<li>Importing the file as a module</li>
+</ol>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>有（最常見的）兩種運行Python文件的方式： “僅運行它”（您可以從終端通過IDLE中的“運行”按鈕執行此操作，等等） 將文件導入為模塊</span><br/><span>The first way is the way that you most likely have been using if you have been doing the exercises in this blog. If you have many files in a large project, this is how you run the “entry point” file in the project.</span><br/></span></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW">第一種方法是您在本博客中進行練習時最可能使用的方法。如果大型項目中有許多文件，這就是在項目中運行“入口點”文件的方式。<br/></span></pre>
+<p>The second way is more subtle: it is what happens when you write an<span> </span><code class="highlighter-rouge">import</code><span> </span>statement at the top of your file. In this exercise for example, you need to<span> </span><code class="highlighter-rouge">import random</code><span> </span>into your program to use the random module. Somewhere on your computer there is a file (or a group of Python files) that make up the<span> </span><code class="highlighter-rouge">random</code><span> </span>module, and in the process of importing them, what you are actually doing is running the file(s) from that module.</p>
+<p>When you have functions defined inside a file (with the<span> </span><code class="highlighter-rouge">def</code><span> </span>keyword, like the<span> </span><code class="highlighter-rouge">def square</code><span> </span>function above) and run a file, the function is not immediately run. You can think what happens is the function is stored for future use.</p>
+<p><span>第二種方法更加微妙：這是在文件頂部編寫導入語句時發生的。例如，在本練習中，您需要將random導入程序中才能使用random模塊。在計算機上的某個地方，有一個文件（或一組Python文件）組成了隨機模塊，並且在導入它們的過程中，您實際上正在做的是從該模塊運行文件。 當您在文件內部定義了函數（使用def關鍵字，例如上面的def square函數）並運行文件時，該函數不會立即運行。您可以認為會發生什麼事，該函數已存儲以備將來使用。</span></p>
+<p><span>Anything else in the file - variables created, functions that are called, operations done, etc - are executed immediately when a Python file is run.</span></p>
+<p><span>運行Python文件時，文件中的所有其他內容-創建的變量，調用的函數，完成的操作等-都會立即執行。</span></p>
+<p><span>However, in the case where you are importing a Python file into another, you want to load all of the functions without creating variables or executing any functions. You just want to load them to use them later. How do you reconcile this problem? With the <code class="highlighter-rouge">if __name__=="__main__"</code><span><span> </span>statement. Create your variables and all your functions inside this statement, and when you import your file into another, it will not mess up your program by creating variables or calling functions.</span></span></p>
+<p><span>但是，在將Python文件導入到另一個文件的情況下，您希望加載所有函數而不創建變量或執行任何函數。您只想加載它們以供以後使用。您如何調和這個問題？使用if __name __ ==“ __ main__”語句。在此語句內創建變量和所有函數，並且在將文件導入另一個語句時，它不會通過創建變量或調用函數而使程序混亂。</span></p>
+<p><span>What the <code class="highlighter-rouge">if __name__=="__main__"</code><span><span> </span>statement from above does is ensure that variables that are created, functions that are called, operations that are done, etc ONLY when you directly run the file, not when you import it into another.</span></span></p>
+<p><span><span>上面的if __name __ ==“ __ main__”語句的作用是確保僅在直接運行文件時（而不是在將文件導入到另一個文件中時）創建的變量，調用的函數，完成的操作等。</span></span></p>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"></span></pre>
+<pre><br/><br/></pre>
+<pre><span lang="zh-TW"><span></span><br/></span></pre>
+<pre><span></span><br/><br/></pre>
+<pre><span></span><br/><br/></pre>
+<pre><br/><br/></pre>
+<pre><span lang="zh-TW"> </span></pre>
+<pre><span></span><br/><br/></pre>
+<pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"> </span></pre>
+<pre><code class="language-python" data-lang="python"></code></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span><span></span></span><br/></span></pre>
 <pre class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW"><span> </span></span></pre>
